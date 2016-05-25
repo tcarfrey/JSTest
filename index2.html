@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>This is the Title</title>
+    </head>
+    
+    <script type="text/javascript">
+    
+	function validateform()
+	{
+	var displayStuff = document.getElementById("displayStuff")
+	var fname = document.getElementById("fname").value;
+	var lname = document.getElementById("lname").value;
+	var email = document.getElementById("email").value;
+	var password = document.getElementById("password").value;
+	
+	displayStuff.innerHTML = "This is the div that will display errors";
+	
+	}
+        
+    </script>
+<body>
+    
+	<div id="displayStuff" style=></div>
+	
+	
+    <form>
+		First Name:<br />
+        <input type ="text" id="fname"  />  <br /> <br />
+		Last Name:<br />
+        <input type ="text" id="lname" /> <br /><br />
+        Email:<br />
+		<input type ="text"  id="email" />     <br /><br />
+        Password:<br />
+		<input type ="password" id="password" />  <br />
+        <br />
+		<input type ="button" value="Submit" onclick="validateform()" />
+    </form>
+        
+</body>    
+    
+</html>
+    
